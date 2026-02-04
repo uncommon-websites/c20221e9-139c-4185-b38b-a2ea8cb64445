@@ -20,7 +20,7 @@
   function toggleFaq(index: number) {
     openFaq = openFaq === index ? -1 : index;
   }
-
+</script>
 
 <main class="w-full overflow-hidden">
   <!-- Hero Section - ALREADY CUSTOMIZED, DO NOT MODIFY -->
