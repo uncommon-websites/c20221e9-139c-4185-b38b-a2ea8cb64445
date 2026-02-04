@@ -2,28 +2,26 @@
   export let mobileMenuOpen = false;
 </script>
 
-<nav class="flex items-center justify-between px-6 py-4 max-w-[1400px] mx-auto w-full text-sm font-medium text-gray-600">
-  <div class="flex items-center gap-8">
-    <a href="/" class="text-black font-bold text-lg tracking-tight flex items-center gap-1">
-      <!-- Simple representation of the ElevenLabs logo mark if needed, or just text -->
-      <span>IIElevenLabs</span>
+<nav class="flex items-center justify-between px-6 py-5 md:px-10 max-w-[1600px] mx-auto">
+  <div class="flex items-center gap-1 cursor-pointer">
+    <a href="/" class="font-bold text-xl tracking-tight flex items-center">
+      <span class="mr-0.5">II</span>Alago
     </a>
-    
-    <div class="hidden lg:flex items-center gap-6">
-      <button class="hover:text-black flex items-center gap-1">Creative Platform <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button class="hover:text-black flex items-center gap-1">Agents Platform <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button class="hover:text-black flex items-center gap-1">Developers <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <button class="hover:text-black flex items-center gap-1">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <a href="/enterprise" class="hover:text-black">Enterprise</a>
-      <a href="/pricing" class="hover:text-black">Pricing</a>
-    </div>
   </div>
 
-  <div class="flex items-center gap-4">
-    <a href="/login" class="hover:text-black hidden sm:block">Log In</a>
-    <a href="/signup" class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition-colors text-xs font-semibold">Sign Up</a>
-    <button class="lg:hidden" on:click={() => mobileMenuOpen = !mobileMenuOpen}>
-        Menu
-    </button>
+  <!-- Navigation Links (Desktop) -->
+  <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-800">
+    <a href="#features" class="hover:text-black transition-colors">Meeting Assistant</a>
+    <a href="#protocol" class="hover:text-black transition-colors">Protocol Designer</a>
+    <a href="#integrations" class="hover:text-black transition-colors">Integrations</a>
+    <a href="#case-studies" class="hover:text-black transition-colors">Case Studies</a>
+    <a href="#construction" class="hover:text-black transition-colors">Construction Firms</a>
+    <a href="#pricing" class="hover:text-black transition-colors">Pricing</a>
+  </div>
+
+  <!-- Auth Buttons -->
+  <div class="flex items-center gap-3">
+    <a href="/login" class="px-5 py-2 rounded-full border border-gray-200 text-[15px] font-medium hover:bg-gray-50 transition-colors">Log in</a>
+    <a href="/signup" class="px-5 py-2 rounded-full bg-black text-white text-[15px] font-medium hover:bg-gray-800 transition-colors">Sign up</a>
   </div>
 </nav>
